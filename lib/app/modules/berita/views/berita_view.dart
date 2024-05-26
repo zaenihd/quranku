@@ -32,7 +32,8 @@ class BeritaView extends GetView<BeritaController> {
               InkWell(
                 onTap: () {
                   controller.urlBerita.value = controller.listBerita[i].link!;
-                  controller.judulBerita.value = controller.listBerita[i].title!;
+                  controller.judulBerita.value =
+                      controller.listBerita[i].title!;
                   Get.toNamed(Routes.DETAIL_BERITA);
                 },
                 child: Column(
@@ -42,7 +43,7 @@ class BeritaView extends GetView<BeritaController> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         CntrImageNetwork(
-                          radius: BorderRadius.circular(10),
+                            radius: BorderRadius.circular(10),
                             imageUrl: controller.listBerita[i].thumbnail!,
                             width: 100,
                             height: 100),
@@ -69,7 +70,9 @@ class BeritaView extends GetView<BeritaController> {
                         ),
                       ],
                     ),
-                    const Divider(thickness: 1,),
+                    const Divider(
+                      thickness: 1,
+                    ),
                     verticalSpace(10)
                   ],
                 ),

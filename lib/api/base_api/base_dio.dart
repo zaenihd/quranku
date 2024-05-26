@@ -55,8 +55,7 @@ class RestClient extends GetxService {
               return status! < 500;
             },
             headers: {
-              "authorization":
-                  "Bearer {Get.put(LoginController()).token.value}"
+              "authorization": "Bearer {Get.put(LoginController()).token.value}"
             },
           ),
         );

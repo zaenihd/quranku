@@ -10,7 +10,7 @@ void main() {
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Application",
-      home: const SplashScreenView(),
+      // home: const SplashScreenView(),
       getPages: AppPages.routes,
       initialRoute: AppPages.INITIAL,
     ),

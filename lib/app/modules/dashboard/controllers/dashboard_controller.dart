@@ -9,15 +9,15 @@ import 'package:quranku/app/modules/tasbih/controllers/tasbih_controller.dart';
 import 'package:quranku/theme/theme.dart';
 
 class DashboardController extends GetxController {
-   List<PersistentBottomNavBarItem> itemsBottomNavigation = [
+  List<PersistentBottomNavBarItem> itemsBottomNavigation = [
     PersistentBottomNavBarItem(
-        icon:  const Icon(FlutterIslamicIcons.quran2),
+        icon: const Icon(FlutterIslamicIcons.quran2),
         title: "Quran",
         activeColorPrimary: mainColor,
         inactiveColorPrimary: Colors.grey,
         inactiveColorSecondary: Colors.purple),
     PersistentBottomNavBarItem(
-        icon:  const Icon(FlutterIslamicIcons.tasbih2),
+        icon: const Icon(FlutterIslamicIcons.tasbih2),
         title: "Tasbih",
         activeColorPrimary: mainColor,
         inactiveColorPrimary: Colors.grey,

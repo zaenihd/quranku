@@ -12,8 +12,8 @@ import 'package:quranku/theme/theme.dart';
 import '../controllers/dashboard_controller.dart';
 
 class DashboardView extends GetView<DashboardController> {
-   DashboardView({Key? key}) : super(key: key);
-   DateTime? currentBackPressTime;
+  DashboardView({Key? key}) : super(key: key);
+  DateTime? currentBackPressTime;
 
   Future<bool> showExitPopup() async {
     return await showDialog(
@@ -54,8 +54,7 @@ class DashboardView extends GetView<DashboardController> {
           BeritaView(),
           DoaView(),
         ],
-        onItemSelected: (value) {
-        },
+        onItemSelected: (value) {},
         items: controller.itemsBottomNavigation,
         // pageTransitionAnimation: PageTransitionAnimation.cupertino,
         confineInSafeArea: true,

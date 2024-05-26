@@ -17,8 +17,8 @@ class DetailController extends GetxController {
     };
     isLoading(true);
     try {
-      final result = await RestClient()
-          .request('${MainUrl.urlApi}surat/${nomerSurah.value}', Method.GET, params);
+      final result = await RestClient().request(
+          '${MainUrl.urlApi}surat/${nomerSurah.value}', Method.GET, params);
       final data = detailSurahFromJson(result.toString());
       surah.value = data.data!;
       log('masuuk');
@@ -28,5 +28,4 @@ class DetailController extends GetxController {
       isLoading(false);
     }
   }
-
 }

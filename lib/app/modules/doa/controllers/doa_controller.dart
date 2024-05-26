@@ -6,10 +6,9 @@ import 'package:quranku/app/data/models/doa.dart';
 import 'package:quranku/app/data/models/dzikir_pagi.dart';
 
 class DoaController extends GetxController {
-   RxBool isLoading = false.obs;
-   RxList<DataDzikir> listDzikirPagi = RxList<DataDzikir>.empty();
-   RxList<ListDoa> listDoa = RxList<ListDoa>.empty();
-
+  RxBool isLoading = false.obs;
+  RxList<DataDzikir> listDzikirPagi = RxList<DataDzikir>.empty();
+  RxList<ListDoa> listDoa = RxList<ListDoa>.empty();
 
   Future<dynamic> getDzikirPagi() async {
     final params = <String, dynamic>{

@@ -5,9 +5,7 @@ class TasbihController extends GetxController {
 
   final count = 0.obs;
 
-
-
   void increment() => count.value++;
 
-  void reset()=> count.value = 0;
+  void reset() => count.value = 0;
 }

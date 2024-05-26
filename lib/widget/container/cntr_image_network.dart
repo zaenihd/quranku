@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:quranku/widget/container/cntr.dart';
 
 class CntrImageNetwork extends StatelessWidget {
-  CntrImageNetwork({
-    super.key,
-    required this.imageUrl,
-    required this.width,
-    required this.height,
+  CntrImageNetwork(
+      {super.key,
+      required this.imageUrl,
+      required this.width,
+      required this.height,
       this.margin,
       this.padding,
       this.radius,
@@ -15,8 +15,7 @@ class CntrImageNetwork extends StatelessWidget {
       this.alignment,
       this.gradient,
       this.ontap,
-    this.child
-  });
+      this.child});
 
   String imageUrl;
   double height;
@@ -31,7 +30,6 @@ class CntrImageNetwork extends StatelessWidget {
   List<BoxShadow>? boxShadow;
   AlignmentGeometry? alignment;
   Function()? ontap;
-
 
   @override
   Widget build(BuildContext context) {

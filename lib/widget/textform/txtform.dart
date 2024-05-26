@@ -57,8 +57,8 @@ class _TxtFormState extends State<TxtForm> {
       child: TextFormField(
         maxLines: widget.maxLines ?? 1,
         maxLength: widget.maxLength,
-        scrollPadding: EdgeInsets.only(
-          bottom: MediaQuery.of(context).viewInsets.bottom),
+        scrollPadding:
+            EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
         initialValue: widget.initialValue,
         autocorrect: false,
         onTap: widget.onTap,
@@ -84,14 +84,14 @@ class _TxtFormState extends State<TxtForm> {
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
                 borderSide: const BorderSide(color: Colors.black)),
-            focusedBorder:  OutlineInputBorder(
-              borderSide: BorderSide(color:widget.borderColor ?? Colors.black),
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: widget.borderColor ?? Colors.black),
             ),
             // e
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10.0),
-              borderSide:  BorderSide(
-                color:widget.borderColor ?? Colors.black,
+              borderSide: BorderSide(
+                color: widget.borderColor ?? Colors.black,
                 width: 1.0,
               ),
             ),

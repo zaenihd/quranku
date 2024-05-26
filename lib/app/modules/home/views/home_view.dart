@@ -135,9 +135,11 @@ class HomeView extends GetView<HomeController> {
               InkWell(
                 onTap: () async {
                   final detailC = Get.put(DetailController());
-                  final SharedPreferences prefs = await SharedPreferences.getInstance();
+                  final SharedPreferences prefs =
+                      await SharedPreferences.getInstance();
                   detailC.nameSurah.value = controller.listSurah[i].namaLatin!;
-                  detailC.nomerSurah.value = controller.listSurah[i].nomor!.toString();
+                  detailC.nomerSurah.value =
+                      controller.listSurah[i].nomor!.toString();
                   prefs.setString('surah', detailC.nameSurah.value);
                   prefs.setString('nomer', detailC.nomerSurah.value);
                   Get.toNamed(Routes.DETAIL);

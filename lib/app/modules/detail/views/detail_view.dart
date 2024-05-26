@@ -190,40 +190,40 @@ class _DetailViewState extends State<DetailView> {
                                     ),
                                   ),
                                   horizontalSpace(15),
-                                InkWell(
-                              onTap: () async {
-                                await player.play(UrlSource(controller
-                                    .surah.value!.ayat![i].audio!['02']
-                                    .toString()));
-                              },
-                              child: Icon(
-                                Icons.play_circle_sharp,
-                                color: mainColor,
-                                size: 30,
-                              ),
-                            ),
-                            horizontalSpace(10),
-                            InkWell(
-                              onTap: () async {
-                                await player.pause();
-                              },
-                              child: Icon(
-                                Icons.pause,
-                                color: mainColor,
-                                size: 30,
-                              ),
-                            ),
-                            horizontalSpace(10),
-                            InkWell(
-                              onTap: () async {
-                                await player.stop();
-                              },
-                              child: Icon(
-                                Icons.stop,
-                                color: mainColor,
-                                size: 30,
-                              ),
-                            ),
+                                  InkWell(
+                                    onTap: () async {
+                                      await player.play(UrlSource(controller
+                                          .surah.value!.ayat![i].audio!['02']
+                                          .toString()));
+                                    },
+                                    child: Icon(
+                                      Icons.play_circle_sharp,
+                                      color: mainColor,
+                                      size: 30,
+                                    ),
+                                  ),
+                                  horizontalSpace(10),
+                                  InkWell(
+                                    onTap: () async {
+                                      await player.pause();
+                                    },
+                                    child: Icon(
+                                      Icons.pause,
+                                      color: mainColor,
+                                      size: 30,
+                                    ),
+                                  ),
+                                  horizontalSpace(10),
+                                  InkWell(
+                                    onTap: () async {
+                                      await player.stop();
+                                    },
+                                    child: Icon(
+                                      Icons.stop,
+                                      color: mainColor,
+                                      size: 30,
+                                    ),
+                                  ),
                                 ],
                               )
                             ],

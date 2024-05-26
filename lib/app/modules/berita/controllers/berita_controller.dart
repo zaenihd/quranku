@@ -9,14 +9,16 @@ class BeritaController extends GetxController {
   RxString urlBerita = "".obs;
   RxString judulBerita = "".obs;
   RxList<Post> listBerita = RxList<Post>.empty();
- Future<dynamic> getListBerita() async {
+  Future<dynamic> getListBerita() async {
     final params = <String, dynamic>{
       // "serviceId": serviceId,
     };
     isLoading(true);
     try {
-      final result = await RestClient()
-          .request('https://api-berita-indonesia.vercel.app/republika/islam/', Method.GET, params);
+      final result = await RestClient().request(
+          'https://api-berita-indonesia.vercel.app/republika/islam/',
+          Method.GET,
+          params);
       final data = listBeritaFromJson(result.toString());
       listBerita.value = data.data!.posts!;
       log('masuuk');

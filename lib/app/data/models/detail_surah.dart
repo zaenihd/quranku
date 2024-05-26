@@ -107,31 +107,29 @@ class Ayat {
   Map<String, String>? audio;
   bool? isPlay;
 
-  Ayat({
-    this.nomorAyat,
-    this.teksArab,
-    this.teksLatin,
-    this.teksIndonesia,
-    this.audio,
-    this.isPlay
-  });
+  Ayat(
+      {this.nomorAyat,
+      this.teksArab,
+      this.teksLatin,
+      this.teksIndonesia,
+      this.audio,
+      this.isPlay});
 
   factory Ayat.fromJson(Map<String, dynamic> json) => Ayat(
-        nomorAyat: json["nomorAyat"],
-        teksArab: json["teksArab"],
-        teksLatin: json["teksLatin"],
-        teksIndonesia: json["teksIndonesia"],
-        audio: Map.from(json["audio"]!)
-            .map((k, v) => MapEntry<String, String>(k, v)),
-            isPlay: false
-      );
+      nomorAyat: json["nomorAyat"],
+      teksArab: json["teksArab"],
+      teksLatin: json["teksLatin"],
+      teksIndonesia: json["teksIndonesia"],
+      audio: Map.from(json["audio"]!)
+          .map((k, v) => MapEntry<String, String>(k, v)),
+      isPlay: false);
 
   Map<String, dynamic> toJson() => {
         "nomorAyat": nomorAyat,
         "teksArab": teksArab,
         "teksLatin": teksLatin,
         "teksIndonesia": teksIndonesia,
-        "isPlay" : isPlay,
+        "isPlay": isPlay,
         "audio":
             Map.from(audio!).map((k, v) => MapEntry<String, dynamic>(k, v)),
       };
